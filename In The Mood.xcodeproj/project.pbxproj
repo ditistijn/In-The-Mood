@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AC6FDC81821E051FA6C7C4A /* Pods_In_The_Mood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0A27A65D23A9EAB0830952 /* Pods_In_The_Mood.framework */; };
 		805254EE243C62B7003FB6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805254ED243C62B7003FB6A4 /* AppDelegate.swift */; };
 		805254F0243C62B7003FB6A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805254EF243C62B7003FB6A4 /* SceneDelegate.swift */; };
 		805254F2243C62B7003FB6A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805254F1243C62B7003FB6A4 /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		805254F8243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 805254F6243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld */; };
 		805254FA243C62BA003FB6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805254F9243C62BA003FB6A4 /* Assets.xcassets */; };
 		805254FD243C62BA003FB6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805254FB243C62BA003FB6A4 /* LaunchScreen.storyboard */; };
+		80525505243C831C003FB6A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80525504243C831C003FB6A4 /* SignUpViewController.swift */; };
+		80650BFE243CA51900587973 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80650BFD243CA51900587973 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A0A27A65D23A9EAB0830952 /* Pods_In_The_Mood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_In_The_Mood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		805254EA243C62B7003FB6A4 /* In The Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In The Mood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805254ED243C62B7003FB6A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		805254EF243C62B7003FB6A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		805254F9243C62BA003FB6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		805254FC243C62BA003FB6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		805254FE243C62BA003FB6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80525504243C831C003FB6A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		80650BFD243CA51900587973 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BAB2CDB37771E18E213C4447 /* Pods-In The Mood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In The Mood.release.xcconfig"; path = "Target Support Files/Pods-In The Mood/Pods-In The Mood.release.xcconfig"; sourceTree = "<group>"; };
+		E400C407DF531ED689326022 /* Pods-In The Mood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In The Mood.debug.xcconfig"; path = "Target Support Files/Pods-In The Mood/Pods-In The Mood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC6FDC81821E051FA6C7C4A /* Pods_In_The_Mood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0199F7B0B31BB08ACB30F46F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E400C407DF531ED689326022 /* Pods-In The Mood.debug.xcconfig */,
+				BAB2CDB37771E18E213C4447 /* Pods-In The Mood.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		38118B421350247F6F41C7E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A0A27A65D23A9EAB0830952 /* Pods_In_The_Mood.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		805254E1243C62B7003FB6A4 = {
 			isa = PBXGroup;
 			children = (
 				805254EC243C62B7003FB6A4 /* In The Mood */,
 				805254EB243C62B7003FB6A4 /* Products */,
+				0199F7B0B31BB08ACB30F46F /* Pods */,
+				38118B421350247F6F41C7E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +90,12 @@
 				805254EF243C62B7003FB6A4 /* SceneDelegate.swift */,
 				805254F1243C62B7003FB6A4 /* ViewController.swift */,
 				805254F3243C62B7003FB6A4 /* Main.storyboard */,
+				80525504243C831C003FB6A4 /* SignUpViewController.swift */,
 				805254F9243C62BA003FB6A4 /* Assets.xcassets */,
 				805254FB243C62BA003FB6A4 /* LaunchScreen.storyboard */,
 				805254FE243C62BA003FB6A4 /* Info.plist */,
 				805254F6243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld */,
+				80650BFD243CA51900587973 /* GoogleService-Info.plist */,
 			);
 			path = "In The Mood";
 			sourceTree = "<group>";
@@ -77,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80525501243C62BA003FB6A4 /* Build configuration list for PBXNativeTarget "In The Mood" */;
 			buildPhases = (
+				418DF0292F9912CCBAB52AAF /* [CP] Check Pods Manifest.lock */,
 				805254E6243C62B7003FB6A4 /* Sources */,
 				805254E7243C62B7003FB6A4 /* Frameworks */,
 				805254E8243C62B7003FB6A4 /* Resources */,
+				387730DDA928B9267041EF1D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80650BFE243CA51900587973 /* GoogleService-Info.plist in Resources */,
 				805254FD243C62BA003FB6A4 /* LaunchScreen.storyboard in Resources */,
 				805254FA243C62BA003FB6A4 /* Assets.xcassets in Resources */,
 				805254F5243C62B7003FB6A4 /* Main.storyboard in Resources */,
@@ -135,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		387730DDA928B9267041EF1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-In The Mood/Pods-In The Mood-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-In The Mood/Pods-In The Mood-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-In The Mood/Pods-In The Mood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		418DF0292F9912CCBAB52AAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-In The Mood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		805254E6243C62B7003FB6A4 /* Sources */ = {
@@ -145,6 +220,7 @@
 				805254F8243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld in Sources */,
 				805254EE243C62B7003FB6A4 /* AppDelegate.swift in Sources */,
 				805254F0243C62B7003FB6A4 /* SceneDelegate.swift in Sources */,
+				80525505243C831C003FB6A4 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +362,7 @@
 		};
 		80525502243C62BA003FB6A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E400C407DF531ED689326022 /* Pods-In The Mood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +381,7 @@
 		};
 		80525503243C62BA003FB6A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAB2CDB37771E18E213C4447 /* Pods-In The Mood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
