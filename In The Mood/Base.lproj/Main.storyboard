@@ -184,6 +184,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="emailSignUpButton:" destination="GY1-x7-aQA" eventType="touchUpInside" id="3Bg-yo-K8k"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evN-05-bfZ">
                                 <rect key="frame" x="20" y="211" width="374" height="35"/>
@@ -249,6 +252,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="295-FD-7xP"/>
                     </view>
+                    <connections>
+                        <outlet property="emailAddressField" destination="mDJ-b2-SYr" id="y01-4b-0aI"/>
+                        <outlet property="passwordField" destination="yxv-kc-RHt" id="8at-QV-y4f"/>
+                        <segue destination="niU-Lh-zcV" kind="show" identifier="signUpToFirstOpen" id="0dY-dU-8M4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkt-bp-2bi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,11 +320,12 @@
             <objects>
                 <viewController title="FirstOpenViewController" id="niU-Lh-zcV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rB2-9e-6ar">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JYh-uR-1Sz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="i2b-kk-V4d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf9-Lb-BGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
