@@ -8,16 +8,21 @@
 
 import UIKit
 import FirebaseAuth
+import GoogleSignIn
+import Firebase
 
 
 class SignUpViewController: UIViewController {
+
+
     
     @IBOutlet weak var emailAddressField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
         
         // Do any additional setup after loading the view.
     }
@@ -40,7 +45,7 @@ class SignUpViewController: UIViewController {
     @IBAction func emailSignUpButton(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailAddressField.text!, password: passwordField.text!){ (user, error) in
         if error == nil {
-            self.performSegue(withIdentifier: "signupToFirstView", sender: self)
+            self.performSegue(withIdentifier: "signUpToFirstOpen", sender: self)
         }
         else{
             let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
