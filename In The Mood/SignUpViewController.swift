@@ -15,6 +15,7 @@ import Firebase
 class SignUpViewController: UIViewController {
 
 
+
     
     @IBOutlet weak var emailAddressField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -28,7 +29,7 @@ class SignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+  
     /*
     // MARK: - Navigation
 
@@ -59,4 +60,31 @@ class SignUpViewController: UIViewController {
     }
 }
 
+    @IBAction func googleSignUpButton(_ sender: Any) {
+         GIDSignIn.sharedInstance().signIn()
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+      //Sign in functionality will be handled here
+          if let error = error {
+            
+          print(error.localizedDescription)
+          
+          return
+          }
+          guard let auth = user.authentication else { return }
+          let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+          Auth.auth().signIn(with: credentials) { (authResult, error) in
+          if let error = error {
+          print(error.localizedDescription)
+          } else {
+              print("Login Successful.")
+          //This is where you should add the functionality of successful login
+          //i.e. dismissing this view or push the home view controller etc
+              
+          }
+      }
+      
+    
+}
 }
