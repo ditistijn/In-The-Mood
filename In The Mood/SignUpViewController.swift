@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().signIn()
         
+        
         // Do any additional setup after loading the view.
     }
     
