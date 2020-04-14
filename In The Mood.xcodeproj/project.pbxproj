@@ -18,6 +18,8 @@
 		805254FA243C62BA003FB6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805254F9243C62BA003FB6A4 /* Assets.xcassets */; };
 		805254FD243C62BA003FB6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805254FB243C62BA003FB6A4 /* LaunchScreen.storyboard */; };
 		80525505243C831C003FB6A4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80525504243C831C003FB6A4 /* SignUpViewController.swift */; };
+		8077ED052445AE2900BBD8E5 /* FirstOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077ED042445AE2900BBD8E5 /* FirstOpenViewController.swift */; };
+		8077ED072445C29C00BBD8E5 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8077ED062445C29C00BBD8E5 /* AddFriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		805254FC243C62BA003FB6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		805254FE243C62BA003FB6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80525504243C831C003FB6A4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8077ED042445AE2900BBD8E5 /* FirstOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOpenViewController.swift; sourceTree = "<group>"; };
+		8077ED062445C29C00BBD8E5 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
 		BAB2CDB37771E18E213C4447 /* Pods-In The Mood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In The Mood.release.xcconfig"; path = "Target Support Files/Pods-In The Mood/Pods-In The Mood.release.xcconfig"; sourceTree = "<group>"; };
 		E400C407DF531ED689326022 /* Pods-In The Mood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In The Mood.debug.xcconfig"; path = "Target Support Files/Pods-In The Mood/Pods-In The Mood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,8 @@
 				805254EF243C62B7003FB6A4 /* SceneDelegate.swift */,
 				805254F1243C62B7003FB6A4 /* ViewController.swift */,
 				805254F3243C62B7003FB6A4 /* Main.storyboard */,
+				8077ED062445C29C00BBD8E5 /* AddFriendsViewController.swift */,
+				8077ED042445AE2900BBD8E5 /* FirstOpenViewController.swift */,
 				803B00D2243DEF3E00B4777E /* TestPlan.xctestplan */,
 				80525504243C831C003FB6A4 /* SignUpViewController.swift */,
 				805254F9243C62BA003FB6A4 /* Assets.xcassets */,
@@ -307,8 +313,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				805254F2243C62B7003FB6A4 /* ViewController.swift in Sources */,
+				8077ED052445AE2900BBD8E5 /* FirstOpenViewController.swift in Sources */,
 				805254F8243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld in Sources */,
 				805254EE243C62B7003FB6A4 /* AppDelegate.swift in Sources */,
+				8077ED072445C29C00BBD8E5 /* AddFriendsViewController.swift in Sources */,
 				805254F0243C62B7003FB6A4 /* SceneDelegate.swift in Sources */,
 				80525505243C831C003FB6A4 /* SignUpViewController.swift in Sources */,
 			);

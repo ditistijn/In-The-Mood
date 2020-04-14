@@ -44,10 +44,19 @@ class SignUpViewController: UIViewController {
         dismiss (animated: true, completion: nil)  
     }
     
+    func showFirstOpenViewController() {
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+          let FirstOpenViewController = storyboard.instantiateViewController(identifier: "FirstOpenViewController")
+
+        show(FirstOpenViewController, sender: self)
+      }
+    
     @IBAction func emailSignUpButton(_ sender: Any) {
         Auth.auth().createUser(withEmail: emailAddressField.text!, password: passwordField.text!){ (user, error) in
         if error == nil {
-            self.performSegue(withIdentifier: "signUpToFirstOpen", sender: self)
+            self.showFirstOpenViewController()
+            
+            print(user)
         }
         else{
             let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
@@ -56,10 +65,9 @@ class SignUpViewController: UIViewController {
             alertController.addAction(defaultAction)
             self.present(alertController, animated: true, completion: nil)
         }
-
     }
 }
-
+    
     @IBAction func googleSignUpButton(_ sender: Any) {
          GIDSignIn.sharedInstance().signIn()
     }
