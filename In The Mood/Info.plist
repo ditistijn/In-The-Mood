@@ -23,7 +23,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.879219957683-5gcampeu6q6rfomnoshdsfivnlam7lab</string>
+				<string>com.googleusercontent.apps.879219957683-4bqg6fs6m4k3cchl2v8vlcep74v740vj</string>
 			</array>
 		</dict>
 	</array>
@@ -58,6 +58,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
