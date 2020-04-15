@@ -23,7 +23,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().signIn()
+        //GIDSignIn.sharedInstance().signIn()
         
         
         // Do any additional setup after loading the view.
@@ -72,27 +72,5 @@ class SignUpViewController: UIViewController {
          GIDSignIn.sharedInstance().signIn()
     }
     
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-      //Sign in functionality will be handled here
-          if let error = error {
-            
-          print(error.localizedDescription)
-          
-          return
-          }
-          guard let auth = user.authentication else { return }
-          let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
-          Auth.auth().signIn(with: credentials) { (authResult, error) in
-          if let error = error {
-          print(error.localizedDescription)
-          } else {
-              print("Login Successful.")
-          //This is where you should add the functionality of successful login
-          //i.e. dismissing this view or push the home view controller etc
-              
-          }
-      }
-      
     
-}
 }
