@@ -53,6 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                   
                     print(user?.profile.givenName)
                     print(user?.profile.familyName)
+                    print("tyis is some messy code")
                     
                     
                 } else {
