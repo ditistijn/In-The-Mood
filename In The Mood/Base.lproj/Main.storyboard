@@ -322,7 +322,7 @@
         <!--HomeViewController-->
         <scene sceneID="7LW-ax-QZe">
             <objects>
-                <viewController title="HomeViewController" id="DDY-kc-eHg" sceneMemberID="viewController">
+                <viewController title="HomeViewController" id="DDY-kc-eHg" customClass="HomeViewController" customModule="In_The_Mood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOu-rN-BsA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

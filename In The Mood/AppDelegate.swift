@@ -47,9 +47,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
             Auth.auth().signInAndRetrieveData(with: credential) { (result, error)  in
                 if error == nil {
-                    print(result!.user.email)
-                    print(result!.user.displayName)
-                
+                    print(result!.user.email!)
+                    print(result!.user.displayName!)
+                    print(user!.userID!)
+                  
+                    self.window?.rootViewController?.performSegue(withIdentifier: "toFirstOpen", sender: self)
+                    
                 } else {
                     print("error, \(error?.localizedDescription)")
                     
