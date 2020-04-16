@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>879219957683-5gcampeu6q6rfomnoshdsfivnlam7lab.apps.googleusercontent.com</string>
+	<string>879219957683-4bqg6fs6m4k3cchl2v8vlcep74v740vj.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.879219957683-5gcampeu6q6rfomnoshdsfivnlam7lab</string>
+	<string>com.googleusercontent.apps.879219957683-4bqg6fs6m4k3cchl2v8vlcep74v740vj</string>
 	<key>API_KEY</key>
 	<string>AIzaSyAAXDquAx66yzzug1cmP9MluRISARulal0</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.biertjens.inthemood</string>
+	<string>com.biertjens.In-The-Mood</string>
 	<key>PROJECT_ID</key>
 	<string>in-the-mood-733dc</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:879219957683:ios:06c1487e7a11d85269b5c6</string>
+	<string>1:879219957683:ios:dd3cf729244318f269b5c6</string>
 	<key>DATABASE_URL</key>
 	<string>https://in-the-mood-733dc.firebaseio.com</string>
 </dict>
