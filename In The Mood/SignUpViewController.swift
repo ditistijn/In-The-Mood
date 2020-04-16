@@ -70,6 +70,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func googleSignUpButton(_ sender: Any) {
          GIDSignIn.sharedInstance().signIn()
+        
     }
     
     

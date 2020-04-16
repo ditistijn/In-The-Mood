@@ -51,7 +51,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     print(result!.user.displayName!)
                     print(user!.userID!)
                   
-                    self.window?.rootViewController?.performSegue(withIdentifier: "toFirstOpen", sender: self)
+                    print(user?.profile.givenName)
+                    print(user?.profile.familyName)
+                    
                     
                 } else {
                     print("error, \(error?.localizedDescription)")
