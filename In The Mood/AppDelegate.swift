@@ -56,13 +56,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     print(user?.profile.givenName)
                     print(user?.profile.familyName)
                     
-                    let vc = SignUpViewController()
-                    vc.showFirstOpenViewController()
-                    
-
-                    let tmpVC = self.window?.rootViewController as! SignUpViewController
-                    tmpVC.showFirstOpenViewController()
-                    
+                   let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                   let homePage = mainStoryboard.instantiateViewController(withIdentifier: "FirstOpenViewController") as! FirstOpenViewController
+                    self.window?.rootViewController = homePage
+                
                     
                 } else {
                     print("error, \(error?.localizedDescription)")
