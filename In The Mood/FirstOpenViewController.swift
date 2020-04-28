@@ -13,11 +13,37 @@ import FirebaseAuth
 
 class FirstOpenViewController: UIViewController {
 
+    func showHomeViewController() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let HomeViewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+
+      show(HomeViewController, sender: self)
+    }
+    
+    
+    func checkIfFirstOpen() {
+        
+        db.collection("users").document(userID).getDocument { (document, error) in
+        if error == nil {
+            
+            if document != nil && document!.exists {
+                let result = document!.get("registered")
+                print(result!)
+                
+                if result != nil {
+                    self.showHomeViewController()
+                }
+            }
+        }
+    }
+}
     @IBOutlet weak var firstNameField: UITextField!
     @IBOutlet weak var lastNameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        checkIfFirstOpen()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +53,18 @@ class FirstOpenViewController: UIViewController {
     }
     
    let userID = Auth.auth().currentUser!.uid
+    
+    func registeredToYes() {
+        
+        let db = Firestore.firestore()
+         let newDocument = db.collection("users").document(userID)
+         /*db.collection("users").addDocument(data: ["firstname": firstNameField!.text,
+                                                   "lastname": lastNameField!.text,
+                                                   "uid": userID])
+        */
+        newDocument.setData(["registered": "true"])
+        
+    }
     
     func storeNameData() {
         
@@ -45,6 +83,7 @@ class FirstOpenViewController: UIViewController {
         "uid": userID])
         
         
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
           let AddFriendsViewController = storyboard.instantiateViewController(identifier: "AddFriendsViewController")
 
@@ -61,6 +100,7 @@ class FirstOpenViewController: UIViewController {
         } else {
             
             storeNameData()
+            registeredToYes()
             
         }
         

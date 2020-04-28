@@ -52,7 +52,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="GY1-x7-aQA" kind="popoverPresentation" popoverAnchorView="CRk-aZ-f0t" id="ZwQ-s1-j32">
+                                            <segue destination="iN7-xJ-hyt" kind="popoverPresentation" popoverAnchorView="CRk-aZ-f0t" id="ZwQ-s1-j32">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
@@ -110,7 +110,7 @@
         <!--SignUpViewController-->
         <scene sceneID="iRs-Ar-Yez">
             <objects>
-                <viewController title="SignUpViewController" id="GY1-x7-aQA" customClass="SignUpViewController" customModule="In_The_Mood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" title="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GY1-x7-aQA" customClass="SignUpViewController" customModule="In_The_Mood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ED-N7-QhV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,6 +271,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="295-FD-7xP"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GeX-po-z3o"/>
                     <connections>
                         <outlet property="emailAddressField" destination="mDJ-b2-SYr" id="y01-4b-0aI"/>
                         <outlet property="passwordField" destination="yxv-kc-RHt" id="8at-QV-y4f"/>
@@ -279,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qkt-bp-2bi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="931.47321428571422"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="931.47321428571422"/>
         </scene>
         <!--PhoneSignupViewController-->
         <scene sceneID="jf3-u2-qgO">
@@ -302,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Re-Dn-unn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="1245"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="1244.8660714285713"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="4Ib-v1-BVt">
@@ -420,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf9-Lb-BGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1741" y="932"/>
+            <point key="canvasLocation" x="2650.7246376811595" y="931.47321428571422"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="qoW-cF-xad">
@@ -435,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Obs-Ri-fOG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2545" y="409"/>
+            <point key="canvasLocation" x="3455.072463768116" y="408.48214285714283"/>
         </scene>
         <!--FriendsListViewController-->
         <scene sceneID="kfO-c6-nXA">
@@ -501,6 +502,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBI-nq-tZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4452" y="-391"/>
+        </scene>
+        <!--SignUpNavigation-->
+        <scene sceneID="cMu-ZX-k45">
+            <objects>
+                <navigationController storyboardIdentifier="signUpNavigation" title="SignUpNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="iN7-xJ-hyt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ArX-a8-EQl">
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GY1-x7-aQA" kind="relationship" relationship="rootViewController" id="Vou-3W-dt8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgn-Fo-hcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="931.47321428571422"/>
         </scene>
     </scenes>
     <resources>

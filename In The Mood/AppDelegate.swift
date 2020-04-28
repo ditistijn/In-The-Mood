@@ -38,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
     }
     
+    
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if let error = error {
             print(error.localizedDescription)
@@ -53,7 +55,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                   
                     print(user?.profile.givenName)
                     print(user?.profile.familyName)
-                    print("tyis is some messy code")
+                    
+                    let vc = SignUpViewController()
+                    vc.showFirstOpenViewController()
+                    
+
+                    let tmpVC = self.window?.rootViewController as! SignUpViewController
+                    tmpVC.showFirstOpenViewController()
                     
                     
                 } else {

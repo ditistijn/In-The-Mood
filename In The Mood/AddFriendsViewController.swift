@@ -16,39 +16,8 @@ let userID = Auth.auth().currentUser!.uid
 
 class AddFriendsViewController: UIViewController {
     @IBOutlet weak var addFriendsLabel: UILabel!
+    
     func labelTextToFirstName() {
-        /* db.collection("users").document("firstname") { (querySnapshot, err) in
-            if err != nil {
-                self.addFriendsLabel.text = "Let's add some friends!"
-            } else {
-                
-                for firstname in querySnapshot!.documents {
-                    print(firstname.data())
-                    self.addFriendsLabel.text = "Let's add some friends, \(firstname)!"
-                }
-                
-            }*/
-   
-       /* let docRef = db.collection("users").document()
-
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
-            } else {
-                print("Document does not exist")
-            }
-        }*/
-        /*db.collection("users").document(userID).getDocument { (document, error) in
-            if error == nil {
-                
-                if document != nil && document!.exists {
-                    let documentData = document!.data()
-                    print(documentData)
-                }
-                
-            }
-        }*/
         
         db.collection("users").document(userID).getDocument { (document, error) in
             if error == nil {
@@ -57,18 +26,12 @@ class AddFriendsViewController: UIViewController {
                     let documentData = document!.get("firstname")
                     print(documentData!)
                     
-                    
-                    
                     self.addFriendsLabel.text = "Let's add some friends, \(documentData!)!"
-                    
-                    
-                    
-                    
+
                 }
                 
             }
         }
-        
     }
     
 
