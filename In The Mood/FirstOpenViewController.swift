@@ -28,7 +28,10 @@ class FirstOpenViewController: UIViewController {
             
             if document != nil && document!.exists {
                 let result = document!.get("registered")
-                print(result!)
+                if result != nil {
+                   print(result!)
+                }
+                
                 
                 if result != nil {
                     self.showHomeViewController()

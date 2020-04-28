@@ -11,7 +11,6 @@
 		803B00DA243DEF6700B4777E /* In_The_MoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B00D9243DEF6700B4777E /* In_The_MoodUITests.swift */; };
 		803B00E2243E203A00B4777E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 803B00E1243E203900B4777E /* GoogleService-Info.plist */; };
 		805254EE243C62B7003FB6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805254ED243C62B7003FB6A4 /* AppDelegate.swift */; };
-		805254F0243C62B7003FB6A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805254EF243C62B7003FB6A4 /* SceneDelegate.swift */; };
 		805254F2243C62B7003FB6A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805254F1243C62B7003FB6A4 /* ViewController.swift */; };
 		805254F5243C62B7003FB6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805254F3243C62B7003FB6A4 /* Main.storyboard */; };
 		805254F8243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 805254F6243C62B7003FB6A4 /* In_The_Mood.xcdatamodeld */; };
@@ -42,7 +41,6 @@
 		803B00E1243E203900B4777E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		805254EA243C62B7003FB6A4 /* In The Mood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "In The Mood.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		805254ED243C62B7003FB6A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		805254EF243C62B7003FB6A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		805254F1243C62B7003FB6A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		805254F4243C62B7003FB6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		805254F7243C62B7003FB6A4 /* In_The_Mood.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = In_The_Mood.xcdatamodel; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			children = (
 				805254ED243C62B7003FB6A4 /* AppDelegate.swift */,
 				805ABB6F2448661F002A941F /* HomeViewController.swift */,
-				805254EF243C62B7003FB6A4 /* SceneDelegate.swift */,
 				805254F1243C62B7003FB6A4 /* ViewController.swift */,
 				805254F3243C62B7003FB6A4 /* Main.storyboard */,
 				8077ED062445C29C00BBD8E5 /* AddFriendsViewController.swift */,
@@ -321,7 +318,6 @@
 				805ABB702448661F002A941F /* HomeViewController.swift in Sources */,
 				805254EE243C62B7003FB6A4 /* AppDelegate.swift in Sources */,
 				8077ED072445C29C00BBD8E5 /* AddFriendsViewController.swift in Sources */,
-				805254F0243C62B7003FB6A4 /* SceneDelegate.swift in Sources */,
 				80525505243C831C003FB6A4 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
